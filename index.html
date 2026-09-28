@@ -74,7 +74,7 @@
     .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
     .nav-links{display:flex;align-items:center;gap:26px;font-size:.9rem;font-weight:700}
     .nav-links a{text-decoration:none}.nav-links a:hover{color:var(--green)}
-    .nav-mark{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green)}
+    .nav-mark{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green);text-decoration:none}
     .nav-mark svg{width:25px;height:25px;flex:0 0 auto}.nav-mark span{font-size:.84rem;letter-spacing:.02em}
     .button{border:0;border-radius:4px;padding:13px 18px;background:var(--green);color:#fff;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;min-height:48px}
     .button:hover{background:var(--green-dark)}
@@ -164,17 +164,16 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
-<body>
+<body id="top">
   <a class="skip" href="#main">Skip to content</a>
   <div class="topline"><div class="wrap"><span>London coverage within the M25</span><span>Other UK cities considered for volume work</span></div></div>
   <nav class="site-nav" aria-label="Primary navigation">
     <div class="wrap nav-inner">
-      <div class="nav-mark" aria-label="Property safety">
+      <a class="nav-mark" href="#top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20H4v-9.5Z" stroke="currentColor" stroke-width="2"/><path d="m8.6 12.3 2.2 2.2 4.7-5" stroke="currentColor" stroke-width="2"/></svg>
-        <span>MY HOME SAFETY LTD</span>
-      </div>
+        <span>MY HOME SAFETY LTD</span></a>
       <div class="nav-links">
-        <a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQs</a>
+        <a href="#top">Home</a><a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQs</a>
         <button class="button" data-open-drawer>Prepare an enquiry</button>
       </div>
     </div>
